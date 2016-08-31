@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B7EA68341D7681D60041CB2D /* APNGasm.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68321D7681D60041CB2D /* APNGasm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7EA68341D7681D60041CB2D /* APNG.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68321D7681D60041CB2D /* APNG.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7EA68531D7681F20041CB2D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B7EA683B1D7681F20041CB2D /* LICENSE */; };
 		B7EA68541D7681F20041CB2D /* png.c in Sources */ = {isa = PBXBuildFile; fileRef = B7EA683C1D7681F20041CB2D /* png.c */; };
 		B7EA68551D7681F20041CB2D /* png.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA683D1D7681F20041CB2D /* png.h */; };
@@ -83,7 +83,7 @@
 		B7F8FB3A1D768534008D6106 /* specwriter.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68921D76822F0041CB2D /* specwriter.h */; };
 		B7F8FB3B1D768534008D6106 /* APNGEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68811D76822F0041CB2D /* APNGEncoder.h */; };
 		B7F8FB3C1D768534008D6106 /* specreader.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68901D76822F0041CB2D /* specreader.h */; };
-		B7F8FB3D1D768534008D6106 /* APNGasm.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68321D7681D60041CB2D /* APNGasm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7F8FB3D1D768534008D6106 /* APNG.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68321D7681D60041CB2D /* APNG.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7F8FB3E1D768534008D6106 /* pnglibconf.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68431D7681F20041CB2D /* pnglibconf.h */; };
 		B7F8FB3F1D768534008D6106 /* apngasm-conf.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA687D1D76822F0041CB2D /* apngasm-conf.h */; };
 		B7F8FB401D768534008D6106 /* pngpriv.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68461D7681F20041CB2D /* pngpriv.h */; };
@@ -95,7 +95,7 @@
 
 /* Begin PBXFileReference section */
 		B7EA682F1D7681D60041CB2D /* APNG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APNG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7EA68321D7681D60041CB2D /* APNGasm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APNGasm.h; sourceTree = "<group>"; };
+		B7EA68321D7681D60041CB2D /* APNG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APNG.h; sourceTree = "<group>"; };
 		B7EA68331D7681D60041CB2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7EA683B1D7681F20041CB2D /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		B7EA683C1D7681F20041CB2D /* png.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = png.c; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 		B7EA68311D7681D60041CB2D /* APNGasm */ = {
 			isa = PBXGroup;
 			children = (
-				B7EA68321D7681D60041CB2D /* APNGasm.h */,
+				B7EA68321D7681D60041CB2D /* APNG.h */,
 				B7EA68331D7681D60041CB2D /* Info.plist */,
 				B7EA68811D76822F0041CB2D /* APNGEncoder.h */,
 				B7EA68821D76822F0041CB2D /* APNGEncoder.mm */,
@@ -313,7 +313,7 @@
 				B7EA68AB1D76822F0041CB2D /* specwriter.h in Headers */,
 				B7EA689D1D76822F0041CB2D /* APNGEncoder.h in Headers */,
 				B7EA68A91D76822F0041CB2D /* specreader.h in Headers */,
-				B7EA68341D7681D60041CB2D /* APNGasm.h in Headers */,
+				B7EA68341D7681D60041CB2D /* APNG.h in Headers */,
 				B7EA685B1D7681F20041CB2D /* pnglibconf.h in Headers */,
 				B7EA68991D76822F0041CB2D /* apngasm-conf.h in Headers */,
 				B7EA685E1D7681F20041CB2D /* pngpriv.h in Headers */,
@@ -338,7 +338,7 @@
 				B7F8FB3A1D768534008D6106 /* specwriter.h in Headers */,
 				B7F8FB3B1D768534008D6106 /* APNGEncoder.h in Headers */,
 				B7F8FB3C1D768534008D6106 /* specreader.h in Headers */,
-				B7F8FB3D1D768534008D6106 /* APNGasm.h in Headers */,
+				B7F8FB3D1D768534008D6106 /* APNG.h in Headers */,
 				B7F8FB3E1D768534008D6106 /* pnglibconf.h in Headers */,
 				B7F8FB3F1D768534008D6106 /* apngasm-conf.h in Headers */,
 				B7F8FB401D768534008D6106 /* pngpriv.h in Headers */,
