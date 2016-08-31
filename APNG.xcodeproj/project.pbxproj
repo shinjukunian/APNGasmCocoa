@@ -141,7 +141,6 @@
 		B7EA68901D76822F0041CB2D /* specreader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = specreader.h; sourceTree = "<group>"; };
 		B7EA68911D76822F0041CB2D /* specwriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = specwriter.cpp; sourceTree = "<group>"; };
 		B7EA68921D76822F0041CB2D /* specwriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = specwriter.h; sourceTree = "<group>"; };
-		B7EA695E1D76832F0041CB2D /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		B7EA69601D7683340041CB2D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		B7F8FB111D76838A008D6106 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B7F8FB491D768534008D6106 /* APNG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APNG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -286,7 +285,6 @@
 			children = (
 				B7F8FB111D76838A008D6106 /* CoreGraphics.framework */,
 				B7EA69601D7683340041CB2D /* libz.tbd */,
-				B7EA695E1D76832F0041CB2D /* CoreImage.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
