@@ -6,7 +6,7 @@
 //  Copyright © 2016 telethon k.k. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for APNG.
 FOUNDATION_EXPORT double APNGVersionNumber;
@@ -16,4 +16,4 @@ FOUNDATION_EXPORT const unsigned char APNGVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <APNG/PublicHeader.h>
 
-
+#import "APNGEncoder.h"
