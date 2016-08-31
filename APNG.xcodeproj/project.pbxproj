@@ -36,7 +36,7 @@
 		B7EA689A1D76822F0041CB2D /* apngasm-version.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA687E1D76822F0041CB2D /* apngasm-version.h */; };
 		B7EA689B1D76822F0041CB2D /* apngasm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7EA687F1D76822F0041CB2D /* apngasm.cpp */; };
 		B7EA689C1D76822F0041CB2D /* apngasm.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68801D76822F0041CB2D /* apngasm.h */; };
-		B7EA689D1D76822F0041CB2D /* APNGEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68811D76822F0041CB2D /* APNGEncoder.h */; };
+		B7EA689D1D76822F0041CB2D /* APNGEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68811D76822F0041CB2D /* APNGEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7EA689E1D76822F0041CB2D /* APNGEncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = B7EA68821D76822F0041CB2D /* APNGEncoder.mm */; };
 		B7EA689F1D76822F0041CB2D /* apngframe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7EA68831D76822F0041CB2D /* apngframe.cpp */; };
 		B7EA68A01D76822F0041CB2D /* apngframe.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68841D76822F0041CB2D /* apngframe.h */; };
@@ -81,7 +81,7 @@
 		B7F8FB381D768534008D6106 /* apngasm.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68801D76822F0041CB2D /* apngasm.h */; };
 		B7F8FB391D768534008D6106 /* apngasmlistener.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68881D76822F0041CB2D /* apngasmlistener.h */; };
 		B7F8FB3A1D768534008D6106 /* specwriter.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68921D76822F0041CB2D /* specwriter.h */; };
-		B7F8FB3B1D768534008D6106 /* APNGEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68811D76822F0041CB2D /* APNGEncoder.h */; };
+		B7F8FB3B1D768534008D6106 /* APNGEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68811D76822F0041CB2D /* APNGEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7F8FB3C1D768534008D6106 /* specreader.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68901D76822F0041CB2D /* specreader.h */; };
 		B7F8FB3D1D768534008D6106 /* APNG.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68321D7681D60041CB2D /* APNG.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7F8FB3E1D768534008D6106 /* pnglibconf.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68431D7681F20041CB2D /* pnglibconf.h */; };
@@ -601,6 +601,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = APNG/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -623,6 +624,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = APNG/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
