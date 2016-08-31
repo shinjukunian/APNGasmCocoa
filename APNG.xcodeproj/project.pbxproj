@@ -126,8 +126,8 @@
 		B7EA687E1D76822F0041CB2D /* apngasm-version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "apngasm-version.h"; sourceTree = "<group>"; };
 		B7EA687F1D76822F0041CB2D /* apngasm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = apngasm.cpp; sourceTree = "<group>"; };
 		B7EA68801D76822F0041CB2D /* apngasm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = apngasm.h; sourceTree = "<group>"; };
-		B7EA68811D76822F0041CB2D /* APNGEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APNGEncoder.h; path = APNGasm2/src/APNGEncoder.h; sourceTree = SOURCE_ROOT; };
-		B7EA68821D76822F0041CB2D /* APNGEncoder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = APNGEncoder.mm; path = APNGasm2/src/APNGEncoder.mm; sourceTree = SOURCE_ROOT; };
+		B7EA68811D76822F0041CB2D /* APNGEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = APNGEncoder.h; path = APNG/APNGEncoder.h; sourceTree = SOURCE_ROOT; };
+		B7EA68821D76822F0041CB2D /* APNGEncoder.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = APNGEncoder.mm; path = APNG/APNGEncoder.mm; sourceTree = SOURCE_ROOT; };
 		B7EA68831D76822F0041CB2D /* apngframe.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = apngframe.cpp; sourceTree = "<group>"; };
 		B7EA68841D76822F0041CB2D /* apngframe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = apngframe.h; sourceTree = "<group>"; };
 		B7EA68851D76822F0041CB2D /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
@@ -145,7 +145,6 @@
 		B7EA69601D7683340041CB2D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		B7F8FB111D76838A008D6106 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B7F8FB491D768534008D6106 /* APNG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APNG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B7F8FB4A1D768534008D6106 /* APNG copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "APNG copy-Info.plist"; path = "/Users/mbertz/Desktop/xcode/APNG/APNG copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,7 +176,6 @@
 				B7EA68311D7681D60041CB2D /* APNGasm */,
 				B7EA68301D7681D60041CB2D /* Products */,
 				B7EA695D1D76832E0041CB2D /* Frameworks */,
-				B7F8FB4A1D768534008D6106 /* APNG copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -248,8 +246,7 @@
 				B7EA68861D76822F0041CB2D /* listener */,
 				B7EA68891D76822F0041CB2D /* spec */,
 			);
-			name = src;
-			path = APNGasm2/src;
+			path = src;
 			sourceTree = SOURCE_ROOT;
 		};
 		B7EA68861D76822F0041CB2D /* listener */ = {
