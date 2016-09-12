@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B79EEF411D81A5E10012927C /* arm_init.c in Sources */ = {isa = PBXBuildFile; fileRef = B79EEF3E1D81A5E10012927C /* arm_init.c */; };
+		B79EEF421D81A5E10012927C /* filter_neon_intrinsics.c in Sources */ = {isa = PBXBuildFile; fileRef = B79EEF3F1D81A5E10012927C /* filter_neon_intrinsics.c */; };
+		B79EEF431D81A5E10012927C /* filter_neon.S in Sources */ = {isa = PBXBuildFile; fileRef = B79EEF401D81A5E10012927C /* filter_neon.S */; };
 		B7EA68341D7681D60041CB2D /* APNG.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68321D7681D60041CB2D /* APNG.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7EA68531D7681F20041CB2D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B7EA683B1D7681F20041CB2D /* LICENSE */; };
 		B7EA68541D7681F20041CB2D /* png.c in Sources */ = {isa = PBXBuildFile; fileRef = B7EA683C1D7681F20041CB2D /* png.c */; };
@@ -36,7 +39,7 @@
 		B7EA689A1D76822F0041CB2D /* apngasm-version.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA687E1D76822F0041CB2D /* apngasm-version.h */; };
 		B7EA689B1D76822F0041CB2D /* apngasm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7EA687F1D76822F0041CB2D /* apngasm.cpp */; };
 		B7EA689C1D76822F0041CB2D /* apngasm.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68801D76822F0041CB2D /* apngasm.h */; };
-		B7EA689D1D76822F0041CB2D /* APNGEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68811D76822F0041CB2D /* APNGEncoder.h */; };
+		B7EA689D1D76822F0041CB2D /* APNGEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68811D76822F0041CB2D /* APNGEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7EA689E1D76822F0041CB2D /* APNGEncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = B7EA68821D76822F0041CB2D /* APNGEncoder.mm */; };
 		B7EA689F1D76822F0041CB2D /* apngframe.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B7EA68831D76822F0041CB2D /* apngframe.cpp */; };
 		B7EA68A01D76822F0041CB2D /* apngframe.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68841D76822F0041CB2D /* apngframe.h */; };
@@ -81,7 +84,7 @@
 		B7F8FB381D768534008D6106 /* apngasm.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68801D76822F0041CB2D /* apngasm.h */; };
 		B7F8FB391D768534008D6106 /* apngasmlistener.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68881D76822F0041CB2D /* apngasmlistener.h */; };
 		B7F8FB3A1D768534008D6106 /* specwriter.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68921D76822F0041CB2D /* specwriter.h */; };
-		B7F8FB3B1D768534008D6106 /* APNGEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68811D76822F0041CB2D /* APNGEncoder.h */; };
+		B7F8FB3B1D768534008D6106 /* APNGEncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68811D76822F0041CB2D /* APNGEncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7F8FB3C1D768534008D6106 /* specreader.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68901D76822F0041CB2D /* specreader.h */; };
 		B7F8FB3D1D768534008D6106 /* APNG.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68321D7681D60041CB2D /* APNG.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7F8FB3E1D768534008D6106 /* pnglibconf.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68431D7681F20041CB2D /* pnglibconf.h */; };
@@ -94,6 +97,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B79EEF3E1D81A5E10012927C /* arm_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = arm_init.c; sourceTree = "<group>"; };
+		B79EEF3F1D81A5E10012927C /* filter_neon_intrinsics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = filter_neon_intrinsics.c; sourceTree = "<group>"; };
+		B79EEF401D81A5E10012927C /* filter_neon.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = filter_neon.S; sourceTree = "<group>"; };
 		B7EA682F1D7681D60041CB2D /* APNG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = APNG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7EA68321D7681D60041CB2D /* APNG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APNG.h; sourceTree = "<group>"; };
 		B7EA68331D7681D60041CB2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -203,6 +209,9 @@
 		B7EA683A1D7681F20041CB2D /* libPNG */ = {
 			isa = PBXGroup;
 			children = (
+				B79EEF3E1D81A5E10012927C /* arm_init.c */,
+				B79EEF3F1D81A5E10012927C /* filter_neon_intrinsics.c */,
+				B79EEF401D81A5E10012927C /* filter_neon.S */,
 				B7EA683B1D7681F20041CB2D /* LICENSE */,
 				B7EA683C1D7681F20041CB2D /* png.c */,
 				B7EA683D1D7681F20041CB2D /* png.h */,
@@ -474,11 +483,14 @@
 				B7F8FB191D768534008D6106 /* pngtrans.c in Sources */,
 				B7F8FB1A1D768534008D6106 /* pngerror.c in Sources */,
 				B7F8FB1B1D768534008D6106 /* apngasm.cpp in Sources */,
+				B79EEF411D81A5E10012927C /* arm_init.c in Sources */,
 				B7F8FB1C1D768534008D6106 /* pngmem.c in Sources */,
 				B7F8FB1D1D768534008D6106 /* pngwrite.c in Sources */,
+				B79EEF431D81A5E10012927C /* filter_neon.S in Sources */,
 				B7F8FB1E1D768534008D6106 /* pngrio.c in Sources */,
 				B7F8FB1F1D768534008D6106 /* pngwutil.c in Sources */,
 				B7F8FB201D768534008D6106 /* png.c in Sources */,
+				B79EEF421D81A5E10012927C /* filter_neon_intrinsics.c in Sources */,
 				B7F8FB211D768534008D6106 /* pngwio.c in Sources */,
 				B7F8FB221D768534008D6106 /* pngtest.c in Sources */,
 				B7F8FB231D768534008D6106 /* pngset.c in Sources */,
@@ -601,6 +613,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = APNG/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -623,6 +636,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "";
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = APNG/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
