@@ -1,2 +1,3 @@
 libPNG/* linguist-vendored
-src/* linguist-vendoredx
+src/* linguist-vendored
+*.mm linguist-language=objc
