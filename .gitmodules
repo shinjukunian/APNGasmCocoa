@@ -1,0 +1,3 @@
+[submodule "APNGasm"]
+	path = APNGasm
+url=https://github.com/shinjukunian/apngasm.git
