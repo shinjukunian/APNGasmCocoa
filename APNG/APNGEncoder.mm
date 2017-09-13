@@ -42,9 +42,6 @@
 }
 
 -(void)dealloc{
-//    if (_assembler != nil) {
-//        
-//    }
 }
 
 
@@ -105,7 +102,6 @@
     else{
         completion(nil,nil);
     }
-    
 }
 
 
@@ -126,7 +122,6 @@
 #warning error not implemented
         completion(nil,nil);
     }
-    
 }
 
 
