@@ -14,7 +14,9 @@ class APNGTests: XCTestCase {
     let outURL=URL(fileURLWithPath: NSTemporaryDirectory(), isDirectory: true).appendingPathComponent("APNG").appendingPathExtension("png")
     let timeInterval:TimeInterval=0.1
     lazy var imageURLS:[URL]={
-        guard let urls=Bundle(for: type(of: self)).urls(forResourcesWithExtension: nil, subdirectory: "testData") else{
+        guard let urls=Bundle(for: type(of: self)).urls(forResourcesWithExtension: nil, subdirectory: "testData").sorted(by: {u1,u2 in
+            return u1.lastPathComponent.compare(u2.lastPathComponent, options:[.numeric]) == .orderedAscending
+        }) else{
             XCTFail("No Images Loaded")
             return [URL]()
         }
