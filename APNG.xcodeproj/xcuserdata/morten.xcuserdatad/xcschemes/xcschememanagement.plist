@@ -7,16 +7,31 @@
 		<key>APNG(iOS).xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>6</integer>
+			<integer>1</integer>
 		</dict>
 		<key>APNG.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>0</integer>
+		</dict>
+		<key>APNGTests-IOS.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>APNGTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>5A06FC5B1F6935FD00AB9851</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>B7EA682E1D7681D60041CB2D</key>
 		<dict>
 			<key>primary</key>

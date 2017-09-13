@@ -68,9 +68,14 @@
     
     bitmapData=(uint8_t*)calloc(bufferLength,1);
     CGContextRef context=  CGBitmapContextCreate(bitmapData, width, height, 8, bytesPerRow, colorSpace, kCGImageAlphaPremultipliedLast);
+
     CGContextDrawImage(context, CGRectMake(0, 0, width, height), frame);
     CGContextRelease(context);
     CGColorSpaceRelease(colorSpace);
+    
+    if(context == nil){
+        return NO;
+    }
     
     apngasm::rgba *_pixels = (apngasm::rgba*)malloc(height * bytesPerRow);
     
@@ -85,8 +90,8 @@
     }
     
     apngasm::APNGFrame apng=apngasm:: APNGFrame::APNGFrame(_pixels, (unsigned int) width, (unsigned int)height, delay*1000, 1000);
-    _assembler.addFrame(apng);
-    
+    size_t retVal=_assembler.addFrame(apng);
+    success |= retVal>0;
     free(bitmapData);
     free(_pixels);
     return success;
