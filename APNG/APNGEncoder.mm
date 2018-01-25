@@ -86,7 +86,7 @@
 
     }
     
-    apngasm::APNGFrame apng=apngasm:: APNGFrame::APNGFrame(_pixels, (unsigned int) width, (unsigned int)height, delay*1000, 1000);
+    apngasm::APNGFrame apng=apngasm::APNGFrame(_pixels, (unsigned int) width, (unsigned int)height, delay*1000, 1000);
     size_t retVal=_assembler.addFrame(apng);
     success |= retVal>0;
     free(bitmapData);
