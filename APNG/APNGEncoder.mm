@@ -12,7 +12,6 @@
 
 @interface APNGEncoder ()
 
-
 @end
 
 
@@ -40,6 +39,11 @@
     }
     return self;
 }
+
+-(void)setLoopCount:(NSUInteger)loopCount{
+    _assembler.setLoops((unsigned int) loopCount);
+}
+
 
 -(void)dealloc{
 }

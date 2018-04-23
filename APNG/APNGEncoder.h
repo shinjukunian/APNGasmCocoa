@@ -12,8 +12,7 @@
 @interface APNGEncoder : NSObject
 
 @property double delayTime;
-@property BOOL loop;
-
+@property (nonatomic) NSUInteger loopCount;
 
 
 -(void)encodeFiles:(NSArray <NSURL*>* _Nonnull)files toURL:(NSURL* _Nonnull)outURL withCompletion:(void(^_Nonnull)(NSURL * _Nullable outURL, NSError * _Nullable error))completion;

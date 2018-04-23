@@ -13,6 +13,8 @@ class APNGTests: XCTestCase {
     
     let outURL=URL(fileURLWithPath: NSTemporaryDirectory(), isDirectory: true).appendingPathComponent("APNG").appendingPathExtension("png")
     let timeInterval:TimeInterval=0.1
+    let loopCount=5
+    
     lazy var imageURLS:[URL]={
         guard let urls=Bundle(for: type(of: self)).urls(forResourcesWithExtension: nil, subdirectory: "testData")?.sorted(by: {u1,u2 in
             return u1.lastPathComponent.compare(u2.lastPathComponent, options:[.numeric]) == .orderedAscending
@@ -57,12 +59,30 @@ class APNGTests: XCTestCase {
         guard let source=CGImageSourceCreateWithURL(url as CFURL,nil) else{
             XCTFail("Image Source Creation failed")
             return nil}
+        
+        guard let props=CGImageSourceCopyProperties(source, nil) as? [String:Any],
+            let pngProps=props[kCGImagePropertyPNGDictionary as String] as? [String:Any],
+            let loopCount=pngProps[kCGImagePropertyAPNGLoopCount as String] as? Int else{
+                XCTFail("PNG Properties Could not be read")
+                return nil
+        }
+        
+        XCTAssertEqual(loopCount, self.loopCount, "Encoded Loop Count Time")
+        
         let count=CGImageSourceGetCount(source)
         let success=[0..<count].indices.reduce(true, {result, idx in
             let image=CGImageSourceCreateImageAtIndex(source, idx, nil)
-            if let properties=CGImageSourceCopyPropertiesAtIndex(source, idx, nil) as? [String:Any], let pngProperties=properties[kCGImagePropertyPNGDictionary as String] as? [String:Any],let delay=pngProperties[kCGImagePropertyAPNGDelayTime as String] as? Double{                
-                XCTAssertEqual(delay, self.timeInterval, accuracy: (self.timeInterval/100), "Encoded Delay Time Wrong")
+            
+            if let properties=CGImageSourceCopyPropertiesAtIndex(source, idx, nil) as? [String:Any],
+                let pngProperties=properties[kCGImagePropertyPNGDictionary as String] as? [String:Any],
+                let delay=pngProperties[kCGImagePropertyAPNGDelayTime as String] as? Double{
+                    XCTAssertEqual(delay, self.timeInterval, accuracy: (self.timeInterval/100), "Encoded Delay Time Wrong")
+                
             }
+            else{
+                
+            }
+            
             XCTAssertNotNil(image, "image creation failed at index \(idx)")
             return image != nil && result
         })
@@ -80,7 +100,7 @@ class APNGTests: XCTestCase {
         guard let encoder=APNGEncoder(url: self.outURL, count: UInt(images.count)) else{
             XCTFail("Encoder Creation Failed")
             return}
-        
+        encoder.loopCount=UInt(self.loopCount)
         for image in images{
             let success=encoder.add(image, withDelay: self.timeInterval)
             XCTAssert(success, "Image Encoding failed")
