@@ -17,8 +17,6 @@
 		5A3188111F69467A004E3143 /* APNG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EA682F1D7681D60041CB2D /* APNG.framework */; };
 		5A3188171F6946A4004E3143 /* APNGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06FC5E1F6935FD00AB9851 /* APNGTests.swift */; };
 		5A3188181F6946FB004E3143 /* testData in Resources */ = {isa = PBXBuildFile; fileRef = 5A06FC851F69373900AB9851 /* testData */; };
-		5AAFF65F1EE80F3A001BD643 /* pnglibconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AAFF65E1EE80F39001BD643 /* pnglibconf.h */; };
-		5AAFF6601EE80F3A001BD643 /* pnglibconf.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AAFF65E1EE80F39001BD643 /* pnglibconf.h */; };
 		B79EEF411D81A5E10012927C /* arm_init.c in Sources */ = {isa = PBXBuildFile; fileRef = B79EEF3E1D81A5E10012927C /* arm_init.c */; };
 		B7EA68341D7681D60041CB2D /* APNG.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68321D7681D60041CB2D /* APNG.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7EA68531D7681F20041CB2D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B7EA683B1D7681F20041CB2D /* LICENSE */; };
@@ -122,13 +120,11 @@
 		5A06FC311F6930D500AB9851 /* filter_sse2_intrinsics.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = filter_sse2_intrinsics.c; path = intel/filter_sse2_intrinsics.c; sourceTree = "<group>"; };
 		5A06FC341F69315700AB9851 /* config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		5A06FC371F69352E00AB9851 /* pnglibconf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pnglibconf.h; sourceTree = "<group>"; };
-		5A06FC381F69352E00AB9851 /* pnglibconf.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = pnglibconf.c; sourceTree = "<group>"; };
 		5A06FC5C1F6935FD00AB9851 /* APNGTests-IOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "APNGTests-IOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A06FC5E1F6935FD00AB9851 /* APNGTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APNGTests.swift; sourceTree = "<group>"; };
 		5A06FC601F6935FD00AB9851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A06FC851F69373900AB9851 /* testData */ = {isa = PBXFileReference; lastKnownFileType = folder; name = testData; path = APNGTests/testData; sourceTree = SOURCE_ROOT; };
 		5A31880C1F69467A004E3143 /* APNGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APNGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AAFF65E1EE80F39001BD643 /* pnglibconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pnglibconf.h; path = libpng/pnglibconf.h; sourceTree = SOURCE_ROOT; };
 		B79EEF3E1D81A5E10012927C /* arm_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = arm_init.c; path = arm/arm_init.c; sourceTree = "<group>"; };
 		B79EEF3F1D81A5E10012927C /* filter_neon_intrinsics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = filter_neon_intrinsics.c; path = arm/filter_neon_intrinsics.c; sourceTree = "<group>"; };
 		B79EEF401D81A5E10012927C /* filter_neon.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = filter_neon.S; path = arm/filter_neon.S; sourceTree = "<group>"; };
@@ -269,7 +265,6 @@
 		B7EA683A1D7681F20041CB2D /* libPNG */ = {
 			isa = PBXGroup;
 			children = (
-				5A06FC381F69352E00AB9851 /* pnglibconf.c */,
 				5A06FC371F69352E00AB9851 /* pnglibconf.h */,
 				5A06FC311F6930D500AB9851 /* filter_sse2_intrinsics.c */,
 				5A06FC301F6930D500AB9851 /* intel_init.c */,
@@ -288,7 +283,6 @@
 				B7EA68441D7681F20041CB2D /* pngmem.c */,
 				B7EA68451D7681F20041CB2D /* pngpread.c */,
 				B7EA68461D7681F20041CB2D /* pngpriv.h */,
-				5AAFF65E1EE80F39001BD643 /* pnglibconf.h */,
 				B7EA68471D7681F20041CB2D /* pngread.c */,
 				B7EA68481D7681F20041CB2D /* pngrio.c */,
 				B7EA68491D7681F20041CB2D /* pngrtran.c */,
@@ -380,7 +374,6 @@
 				B7EA689C1D76822F0041CB2D /* apngasm.h in Headers */,
 				B7EA68A31D76822F0041CB2D /* apngasmlistener.h in Headers */,
 				B7EA68AB1D76822F0041CB2D /* specwriter.h in Headers */,
-				5AAFF65F1EE80F3A001BD643 /* pnglibconf.h in Headers */,
 				B7EA689D1D76822F0041CB2D /* APNGEncoder.h in Headers */,
 				B7EA68A91D76822F0041CB2D /* specreader.h in Headers */,
 				B7EA68341D7681D60041CB2D /* APNG.h in Headers */,
@@ -403,7 +396,6 @@
 				B7F8FB381D768534008D6106 /* apngasm.h in Headers */,
 				B7F8FB391D768534008D6106 /* apngasmlistener.h in Headers */,
 				B7F8FB3A1D768534008D6106 /* specwriter.h in Headers */,
-				5AAFF6601EE80F3A001BD643 /* pnglibconf.h in Headers */,
 				B7F8FB3B1D768534008D6106 /* APNGEncoder.h in Headers */,
 				B7F8FB3C1D768534008D6106 /* specreader.h in Headers */,
 				B7F8FB3D1D768534008D6106 /* APNG.h in Headers */,
@@ -524,6 +516,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
