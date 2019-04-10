@@ -17,6 +17,7 @@
 		5A3188111F69467A004E3143 /* APNG.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7EA682F1D7681D60041CB2D /* APNG.framework */; };
 		5A3188171F6946A4004E3143 /* APNGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A06FC5E1F6935FD00AB9851 /* APNGTests.swift */; };
 		5A3188181F6946FB004E3143 /* testData in Resources */ = {isa = PBXBuildFile; fileRef = 5A06FC851F69373900AB9851 /* testData */; };
+		5A8C67E9225DCD13005E4137 /* palette_neon_intrinsics.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A8C67E8225DCD13005E4137 /* palette_neon_intrinsics.c */; };
 		B79EEF411D81A5E10012927C /* arm_init.c in Sources */ = {isa = PBXBuildFile; fileRef = B79EEF3E1D81A5E10012927C /* arm_init.c */; };
 		B7EA68341D7681D60041CB2D /* APNG.h in Headers */ = {isa = PBXBuildFile; fileRef = B7EA68321D7681D60041CB2D /* APNG.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B7EA68531D7681F20041CB2D /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = B7EA683B1D7681F20041CB2D /* LICENSE */; };
@@ -125,6 +126,7 @@
 		5A06FC601F6935FD00AB9851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A06FC851F69373900AB9851 /* testData */ = {isa = PBXFileReference; lastKnownFileType = folder; name = testData; path = APNGTests/testData; sourceTree = SOURCE_ROOT; };
 		5A31880C1F69467A004E3143 /* APNGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APNGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A8C67E8225DCD13005E4137 /* palette_neon_intrinsics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = palette_neon_intrinsics.c; path = arm/palette_neon_intrinsics.c; sourceTree = "<group>"; };
 		B79EEF3E1D81A5E10012927C /* arm_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = arm_init.c; path = arm/arm_init.c; sourceTree = "<group>"; };
 		B79EEF3F1D81A5E10012927C /* filter_neon_intrinsics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = filter_neon_intrinsics.c; path = arm/filter_neon_intrinsics.c; sourceTree = "<group>"; };
 		B79EEF401D81A5E10012927C /* filter_neon.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = filter_neon.S; path = arm/filter_neon.S; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 				5A06FC301F6930D500AB9851 /* intel_init.c */,
 				B79EEF3E1D81A5E10012927C /* arm_init.c */,
 				B79EEF3F1D81A5E10012927C /* filter_neon_intrinsics.c */,
+				5A8C67E8225DCD13005E4137 /* palette_neon_intrinsics.c */,
 				B79EEF401D81A5E10012927C /* filter_neon.S */,
 				B7EA683B1D7681F20041CB2D /* LICENSE */,
 				B7EA683C1D7681F20041CB2D /* png.c */,
@@ -625,6 +628,7 @@
 				B7F8FB1B1D768534008D6106 /* apngasm.cpp in Sources */,
 				B79EEF411D81A5E10012927C /* arm_init.c in Sources */,
 				B7F8FB1C1D768534008D6106 /* pngmem.c in Sources */,
+				5A8C67E9225DCD13005E4137 /* palette_neon_intrinsics.c in Sources */,
 				B7F8FB1D1D768534008D6106 /* pngwrite.c in Sources */,
 				5A06FC351F69339D00AB9851 /* filter_neon.S in Sources */,
 				B7F8FB1E1D768534008D6106 /* pngrio.c in Sources */,
