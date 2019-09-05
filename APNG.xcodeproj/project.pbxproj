@@ -127,6 +127,7 @@
 		5A06FC851F69373900AB9851 /* testData */ = {isa = PBXFileReference; lastKnownFileType = folder; name = testData; path = APNGTests/testData; sourceTree = SOURCE_ROOT; };
 		5A31880C1F69467A004E3143 /* APNGTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APNGTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A8C67E8225DCD13005E4137 /* palette_neon_intrinsics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = palette_neon_intrinsics.c; path = arm/palette_neon_intrinsics.c; sourceTree = "<group>"; };
+		5A8CDAC52321660000A2CBEE /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		B79EEF3E1D81A5E10012927C /* arm_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = arm_init.c; path = arm/arm_init.c; sourceTree = "<group>"; };
 		B79EEF3F1D81A5E10012927C /* filter_neon_intrinsics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = filter_neon_intrinsics.c; path = arm/filter_neon_intrinsics.c; sourceTree = "<group>"; };
 		B79EEF401D81A5E10012927C /* filter_neon.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = filter_neon.S; path = arm/filter_neon.S; sourceTree = "<group>"; };
@@ -232,6 +233,7 @@
 		B7EA68251D7681D60041CB2D = {
 			isa = PBXGroup;
 			children = (
+				5A8CDAC52321660000A2CBEE /* Package.swift */,
 				B7EA683A1D7681F20041CB2D /* libPNG */,
 				B7EA68311D7681D60041CB2D /* APNGasm */,
 				5A06FC5D1F6935FD00AB9851 /* APNGTests */,
