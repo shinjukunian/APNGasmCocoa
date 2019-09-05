@@ -17,8 +17,8 @@ let package = Package(
         //.package(url: "https://url/of/another/package/named/Utility", from: "1.0.0"),
     ],
     targets: [
-        .target(name: "libPNG", dependencies: [], path:"libPNG", exclude:["contrib", "scripts"]),
-        .target(name: "APNGasm", dependencies: ["libPNG"], path: "APNGasm/lib/src", exclude: ["spec"], sources: nil, publicHeadersPath: nil, cSettings: [.headerSearchPath("../../../libPNG")], cxxSettings: nil, swiftSettings: nil, linkerSettings: nil),
+        .target(name: "libPNG", dependencies: [], path:"libPNG", exclude:["contrib", "scripts"],sources: nil, publicHeadersPath: "."),
+        .target(name: "APNGasm", dependencies: ["libPNG"], path: "APNGasm/lib/src", exclude: ["spec"], sources: nil, publicHeadersPath: ".", cSettings: [.headerSearchPath("../../../libPNG")], cxxSettings: nil, swiftSettings: nil, linkerSettings: nil),
         .target(name: "APNG", dependencies: ["APNGasm"], path: "APNG", exclude: [], sources: nil, publicHeadersPath: ".", cSettings: [.headerSearchPath("../APNGasm/lib/src"), .headerSearchPath("../libPNG")], cxxSettings: nil, swiftSettings: nil, linkerSettings: nil),
         
         .testTarget(name: "APNGTest", dependencies: ["APNG"], path: "APNGTests", exclude: [], sources: nil, cSettings: nil, cxxSettings: nil, swiftSettings: [.define("SPM")], linkerSettings: nil)
