@@ -15,7 +15,7 @@ class APNGTests: XCTestCase {
     let timeInterval:TimeInterval=0.1
     let loopCount=5
     
-    #if SPM
+    #if SWIFT_PACKAGE
     lazy var imageURLS:[URL]={
         let currentURL=URL(fileURLWithPath: #file).deletingLastPathComponent()
         let imageURL=currentURL.appendingPathComponent("testData", isDirectory: true)
