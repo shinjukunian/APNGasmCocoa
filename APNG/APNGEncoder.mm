@@ -9,7 +9,6 @@
 #import "APNGEncoder.h"
 #import "apngasm.h"
 
-
 @interface APNGEncoder ()
 
 @end
