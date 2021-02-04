@@ -14,7 +14,7 @@ let package = Package(
         .library(name: "ANPG", targets: ["APNG"]),
     ],
     dependencies: [
-        //.package(url: "https://url/of/another/package/named/Utility", from: "1.0.0"),
+
     ],
     targets: [
         .target(name: "libPNG", dependencies: [],
