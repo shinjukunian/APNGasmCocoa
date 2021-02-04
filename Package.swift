@@ -38,7 +38,12 @@ let package = Package(
                           "intel",
                           "arm"],
                 publicHeadersPath: "."),
-        .target(name: "APNGasm", dependencies: ["libPNG"], path: "APNGasm/lib/src", exclude: ["spec"], sources: nil, publicHeadersPath: ".", cSettings: [.headerSearchPath("../../../libPNG")], cxxSettings: nil, swiftSettings: nil, linkerSettings: nil),
+        .target(name: "APNGasm", dependencies: ["libPNG"], path: "APNGasm/lib/src",
+                exclude: ["spec"],
+                sources: ["apngasm.cpp","apngframe.cpp","listener"],
+                publicHeadersPath: "include",
+                cSettings: [.headerSearchPath("../../../libPNG")],
+                cxxSettings: nil, swiftSettings: nil, linkerSettings: nil),
         .target(name: "APNG", dependencies: ["APNGasm"], path: "APNG", exclude: [], sources: nil, publicHeadersPath: ".", cSettings: [.headerSearchPath("../APNGasm/lib/src"), .headerSearchPath("../libPNG")], cxxSettings: nil, swiftSettings: nil, linkerSettings: nil),
         
         .testTarget(name: "APNGTest", dependencies: ["APNG"], path: "APNGTests", exclude: [], sources: nil, cSettings: nil, cxxSettings: nil, swiftSettings: nil, linkerSettings: nil)
