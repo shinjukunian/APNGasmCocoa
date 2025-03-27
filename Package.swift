@@ -49,7 +49,10 @@ let package = Package(
         
         .target(name: "APNG", dependencies: ["APNGasm"], path: "APNG", exclude: [], sources: nil, publicHeadersPath: ".", cSettings: [.headerSearchPath("../APNGasm/lib/src"), .headerSearchPath("../libPNG")], cxxSettings: nil, swiftSettings: nil, linkerSettings: nil),
         
-        .testTarget(name: "APNGTest", dependencies: ["APNG"], path: "APNGTests", exclude: [], sources: nil, cSettings: nil, cxxSettings: nil, swiftSettings: nil, linkerSettings: nil)
+        .testTarget(name: "APNGTest", dependencies: ["APNG"], path: "APNGTests", exclude: [],
+                    sources: nil,
+                    resources:[.copy("testData")],
+                    cSettings: nil, cxxSettings: nil, swiftSettings: nil, linkerSettings: nil)
         
     ],
     

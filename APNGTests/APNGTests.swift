@@ -15,24 +15,8 @@ class APNGTests: XCTestCase {
     let timeInterval:TimeInterval=0.1
     let loopCount=5
     
-    #if SWIFT_PACKAGE
     lazy var imageURLS:[URL]={
-        let currentURL=URL(fileURLWithPath: #file).deletingLastPathComponent()
-        let imageURL=currentURL.appendingPathComponent("testData", isDirectory: true)
-        let imageURLs=try! FileManager.default.contentsOfDirectory(at: imageURL, includingPropertiesForKeys: nil, options: [.skipsHiddenFiles])
-            .sorted(by: {u1,u2 in
-                return u1.lastPathComponent.compare(u2.lastPathComponent, options:[.numeric]) == .orderedAscending
-                
-            })
-        
-        XCTAssertGreaterThan(imageURLs.count, 1, "insufficient images loaded")
-
-        return imageURLs
-    }()
-    
-    #else
-    lazy var imageURLS:[URL]={
-        guard let urls=Bundle(for: type(of: self)).urls(forResourcesWithExtension: nil, subdirectory: "testData")?.sorted(by: {u1,u2 in
+        guard let urls=Bundle.module.urls(forResourcesWithExtension: nil, subdirectory: "testData")?.sorted(by: {u1,u2 in
             return u1.lastPathComponent.compare(u2.lastPathComponent, options:[.numeric]) == .orderedAscending
         }) else{
             XCTFail("No Images Loaded")
@@ -41,9 +25,7 @@ class APNGTests: XCTestCase {
         XCTAssertGreaterThan(urls.count, 1, "insufficient images loaded")
         return urls
     }()
-    #endif
-    
-    
+
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.
